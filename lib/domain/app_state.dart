@@ -2,8 +2,8 @@ import '../data/onbording.dart';
 
 class AppState {
   static String? workerId = 'c402f453-a956-4d6f-b7da-db785f4aeb82';
-  static bool isHead = false;
-  static bool isHr = true;
+  static bool isHead = true;
+  static bool isHr = false;
   static bool isInstructor = false;
 
   static String companyId = 'f3268e4d-3f87-438d-96fd-fbe05d455611';

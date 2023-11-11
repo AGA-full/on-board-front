@@ -53,7 +53,7 @@ class OnboardingsPage extends StatelessWidget {
                 : const SizedBox(
                     height: 0,
                   ),
-            /*AppState.isHead ? const Column(
+            AppState.isHead ? const Column(
               children: [
                 Text('Ваши подчинённые'),
                 OnboardingsList(type: OnboardingListType.HEAD)
@@ -68,7 +68,7 @@ class OnboardingsPage extends StatelessWidget {
             !AppState.isInstructor & !AppState.isHr & !AppState.isHead
                 ?
             const OnboardingsList(type: OnboardingListType.INSTRUCTOR)
-                : Container(),*/
+                : Container(),
           ],
         ),
       );
