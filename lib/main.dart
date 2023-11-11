@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:onboard/domain/app_state.dart';
 import 'package:onboard/presentation/auth_page.dart';
-import 'package:onboard/presentation/onboarding_page.dart';
+import 'package:onboard/presentation/onboardings_page.dart';
 
 void main() {
   runApp(const MyApp());

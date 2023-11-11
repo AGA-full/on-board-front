@@ -2,7 +2,7 @@ import '../data/onbording.dart';
 
 class AppState {
   static String? workerId = 'c402f453-a956-4d6f-b7da-db785f4aeb82';
-  static bool isHead = true;
+  static bool isHead = false;
   static bool isHr = false;
   static bool isInstructor = false;
 
@@ -36,11 +36,34 @@ class AppState {
 
   static List<OnboardingBlock> getOnboardingsByType(OnboardingListType type) =>
       switch (type) {
-        OnboardingListType.HR => [OnboardingBlock(title: "Илья Шевченко", onboardings: [
-          Onboarding(id: 'c402f453-a956-4d6f-b7da-db785f4aeb82', title: 'Onboarding', tags: [OnboardingTag(id: 1, title: 'OnBoard', color: 0xFFF9A7A1)])
-        ])],
+        OnboardingListType.HR => [
+            OnboardingBlock(title: "Илья Шевченко", onboardings: [
+              Onboarding(
+                  id: 'c402f453-a956-4d6f-b7da-db785f4aeb82',
+                  title: 'Onboarding',
+                  tags: [
+                    OnboardingTag(id: 1, title: 'OnBoard', color: 0xFFF9A7A1)
+                  ])
+            ])
+          ],
         OnboardingListType.HEAD => [],
-        OnboardingListType.BASIC => [],
+        OnboardingListType.BASIC => [
+            OnboardingBlock(title: "Проходите сейчас", onboardings: [
+              Onboarding(
+                  id: 'c402f453-a956-4d6f-b7da-db785f4aeb83',
+                  title: 'Код ревью',
+                  tags: [
+                    OnboardingTag(
+                        id: 2, title: 'Engineering', color: 0xFFA1C9F9),
+                  ]),
+              Onboarding(
+                  id: 'c402f453-a956-4d6f-b7da-db785f4aeb84',
+                  title: 'Больничные, отпуска и удалённая работа',
+                  tags: [
+                    OnboardingTag(id: 1, title: 'OnBoard', color: 0xFFF9A7A1)
+                  ])
+            ])
+          ],
         OnboardingListType.INSTRUCTOR => [],
       };
 }

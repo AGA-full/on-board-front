@@ -21,7 +21,7 @@ class OnboardingsCarousel extends StatelessWidget {
             height: 10,
           ),
           SizedBox(
-            height: 100,
+            height: 200,
             child: ListView.builder(
               itemCount: onboardingBlock.onboardings.length,
               itemBuilder: (context, idx) =>
